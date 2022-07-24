@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffff00;
+}
+
+.header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: lightblue;
+    font-weight: bolder;
+    height: 6rem;
+}
+
+.header > h1 {
+    padding: 1rem 1rem;
+}
+
+#header-rock {
+    color: red;
+}
+#header-paper {
+    color: yellow;
+}
+#header-scissors {
+    color: blue;
+}
+
+.main {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main > h1 {
+    font-size: 2.5rem;
+    margin: 2rem auto;
+}
+
+.player-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+}
+
+.icons {
+    border: 4px black solid;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 1rem;
+    background-color: (255, 255, 255);
+    transition: box-shadow, 0.1s;
+}
+
+.icons:hover {
+    cursor: pointer;
+    box-shadow: 0px 0 20px 10px white;
+}
+
+.icons:active {
+    box-shadow: 0px 0px 30px 20px white;
+    padding: 1.5rem;
+}
+
+.bottom {
+    margin: 3rem 0 0 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.25rem;
+}
+.bottom > div {
+    margin: auto 2rem;
+}
+
+#computer-score, #player-score {
+    margin-top: 0.75rem;
+}
+
+#round-info {
+    margin: 5rem 0 0 0;
+    font-size: 2.5rem;
+}
+
+#reset  {
+    padding: 4rem;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30rem;
+    width: 40rem;
+    background-color: white;
+    border-radius: 2rem;
+    border: black 8px solid;
+    text-align: center;
+    display: none;
+}
+
+#button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    background-color: yellow;
+    border: black 4px solid;
+    border-radius: 0.5rem;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 94);
+}
+
